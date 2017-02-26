@@ -4,6 +4,8 @@
 @import url("components/card.css");
 @import url("components/wrapper.css");
 @import url("components/features.css");
+@import url("components/logo.css");
+@import url("components/cards.css");
 
 body {
   margin: 0;
@@ -12,6 +14,7 @@ body {
 h1, h2, h3 {
   font-family: Raleway, Helvetica, sans-serif;
 }
+
 h2 {
   font-size: 28px;
   font-weight: bold;

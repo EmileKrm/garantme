@@ -1,46 +1,70 @@
-/* Card design */
-.card {
-  height: 250px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  color: white;
+.card-white {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px #E6E6E6;
+  padding: 10px;
+}
+
+.card-image {
+  height: 150px;
+  background-size: cover;
   position: relative;
-  border-radius: 5px;
-  margin-bottom: 20px;
 }
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+
+.card-image img {
+
 }
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 10px;
-  text-transform: uppercase;
-}
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.card-description h2 {
-  font-size: 24px;
-}
-.card-description p {
-  font-size: 13px;
-  }
-.card-link {
+
+.card-image-hover {
+  background-color: rgba(255,255,255,0.9);
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
-  width: 100%;
-  z-index:2;
-  background: black;
+  padding: 15px;
   opacity: 0;
 }
-.card-link:hover{
-  opacity: 0.1;
+
+.card-image:hover .card-image-hover {
+  opacity: 1;
 }
+
+.card-controls {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-controls i {
+  padding: 0 5px 0 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer img {
+  margin-right: 10px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 32%;
+}
+
+
+
+
+
+
